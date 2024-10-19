@@ -1,0 +1,66 @@
+/* Custom style for all tabs */
+    .stTabs > div[data-baseweb="tab-list"] > div {
+        background-color: #e8e8e8; /* Default tab color */
+        color: #4f4f4f; /* Default tab text color */
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 4px; /* Rounded corners */
+        margin-right: 5px; /* Space between tabs */
+        padding: 10px; /* Padding inside tabs */
+        border: none; /* Remove default border */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover/active effects */
+    }
+    
+    /* Custom style for the active tab */
+    .stTabs > div[data-baseweb="tab-list"] > div[aria-selected="true"] {
+        background-color: #0e1117; /* Gray-blue color for active tab */
+        color: #ffffff; /* Active tab text color */
+        border-radius: 4px; /* Rounded corners for active tab */
+    }
+    
+    /* Tab hover effect */
+    .stTabs > div[data-baseweb="tab-list"] > div:hover {
+        background-color: #d3d3d3; /* Tab color on hover */
+        color: #333; /* Tab text color on hover */
+    }
+
+    /* Button styling */
+    .stButton button {
+        background-color: #1a1a1a; /* Default button color */
+        color: #fff; /* Default button text color */
+        border: none;
+        border-radius: 4px;
+    }
+
+    /* Button hover effect */
+    .stButton button:hover {
+        background-color: #333; /* Button color on hover */
+        color: #fff; /* Button text color on hover */
+    }
+
+    /* Button active effect */
+    .stButton button:active {
+        background-color: #007BFF; /* Active button color */
+        color: #fff; /* Active button text color */
+    }
+
+    /* Specific styling for the "Browse files" button */
+    [data-testid="baseButton-secondary"] {
+        background-color: #1a1a1a; /* Match button color */
+        color: #fff; /* Match button text color */
+        border: none; /* Remove any border */
+        border-radius: 4px; /* Rounded corners */
+        padding: 10px 15px; /* Padding inside the button */
+        cursor: pointer; /* Add a pointer cursor on hover */
+    }
+    
+    /* Hover effect for "Browse files" button */
+    [data-testid="baseButton-secondary"]:hover {
+        background-color: #333; /* Hover color */
+        color: #fff; /* Text color on hover */
+    }
+
+    /* Active effect for "Browse files" button */
+    [data-testid="baseButton-secondary"]:active {
+        background-color: #007BFF; /* Active color */
+        color: #fff; /* Active text color */
+    }

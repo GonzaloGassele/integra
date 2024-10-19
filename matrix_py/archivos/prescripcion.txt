@@ -1,0 +1,1 @@
+archivo de ejemplo para simular descargar la prescripción una vez guardada

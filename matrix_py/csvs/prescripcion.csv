@@ -1,0 +1,36 @@
+Nombre,Ambientación,Tipo,Método,Máquina,Dosis,Ambiente
+Prescripción Lara,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,50000.0,Muy malo
+Prescripción Lara,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,10000.0,Malo
+Prescripción Lara,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,100000.0,Medio
+Prescripción Lara,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,150000.0,Bueno
+Prescripción Lara,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,,Muy Bueno
+PrescripcionTest,TestAmb (Campo Test (CT1)),Soja,,Command Center 4200,50000.0,Muy malo
+PrescripcionTest,TestAmb (Campo Test (CT1)),Soja,,Command Center 4200,100000.0,Malo
+PrescripcionTest,TestAmb (Campo Test (CT1)),Soja,,Command Center 4200,200000.0,Maso
+PrescripcionTest,TestAmb (Campo Test (CT1)),Soja,,Command Center 4200,300000.0,Bueno
+PrescripcionTest,TestAmb (Campo Test (CT1)),Soja,,Command Center 4200,300000.0,Excelente
+PrescTest2,AmbCT2 (Campo Test 2 (CT2)),Maiz,,GS2 2600,10000.0,Muy malo
+PrescTest2,AmbCT2 (Campo Test 2 (CT2)),Maiz,,GS2 2600,30000.0,Malo
+PrescTest2,AmbCT2 (Campo Test 2 (CT2)),Maiz,,GS2 2600,50000.0,Maso
+PrescTest2,AmbCT2 (Campo Test 2 (CT2)),Maiz,,GS2 2600,100000.0,Bueno
+PrescTest2,AmbCT2 (Campo Test 2 (CT2)),Maiz,,GS2 2600,200000.0,Excelente
+PrescTest3,AmbCT2 (Campo Test 2 (CT2)),Soja,,GS2 2600,10000.0,Muy malo
+PrescTest3,AmbCT2 (Campo Test 2 (CT2)),Soja,,GS2 2600,10000.0,Malo
+PrescTest3,AmbCT2 (Campo Test 2 (CT2)),Soja,,GS2 2600,10000.0,Maso
+PrescTest3,AmbCT2 (Campo Test 2 (CT2)),Soja,,GS2 2600,10000.0,Bueno
+PrescTest3,AmbCT2 (Campo Test 2 (CT2)),Soja,,GS2 2600,10000.0,Excelente
+PrescTest4,Amb Lara (Campo Lara (LFH)),Maiz,,GS2 2600,,Muy malo
+PrescTest4,Amb Lara (Campo Lara (LFH)),Maiz,,GS2 2600,,Malo
+PrescTest4,Amb Lara (Campo Lara (LFH)),Maiz,,GS2 2600,,Medio
+PrescTest4,Amb Lara (Campo Lara (LFH)),Maiz,,GS2 2600,,Bueno
+PrescTest4,Amb Lara (Campo Lara (LFH)),Maiz,,GS2 2600,,Muy Bueno
+PrTst,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,,Muy malo
+PrTst,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,,Malo
+PrTst,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,,Medio
+PrTst,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,,Bueno
+PrTst,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,,Muy Bueno
+PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000,a
+PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000,b
+PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000,c
+PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000,d
+PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000,e
