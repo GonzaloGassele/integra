@@ -3,7 +3,11 @@ from PIL import Image
 import pydeck as pdk
 import geopandas as gpd
 
+<<<<<<< HEAD
 image = Image.open("imagenes/file.png")
+=======
+image = Image.open("matrix_py/imagenes/file.png")
+>>>>>>> d453e33 (git commit -m "Descripción de los cambios")
 
 # Set the page configuration to wide layout
 st.set_page_config(layout="wide",
