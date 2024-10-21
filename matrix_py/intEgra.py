@@ -3,11 +3,7 @@ from PIL import Image
 import pydeck as pdk
 import geopandas as gpd
 
-<<<<<<< HEAD
-image = Image.open("imagenes/file.png")
-=======
 image = Image.open("matrix_py/imagenes/file.png")
->>>>>>> d453e33 (git commit -m "Descripción de los cambios")
 
 # Set the page configuration to wide layout
 st.set_page_config(layout="wide",
@@ -34,7 +30,7 @@ def main():
     st.title("intEgra")
     
      # Cargar el archivo GeoJSON
-    geojson_file = "/home/gonza/Documentos/Integra/tio miguel prueba.gpkg"  # Reemplaza con la ruta a tu archivo GeoJSON
+    geojson_file = "tio miguel prueba.gpkg"  # Reemplaza con la ruta a tu archivo GeoJSON
     gdf = gpd.read_file(geojson_file)
 
     # Convertir a formato compatible con Pydeck
