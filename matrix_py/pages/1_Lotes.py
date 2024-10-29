@@ -1,23 +1,35 @@
 import os
 import time
+from PIL import Image
 
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
+import login
+
 
 from functions import load_lotes, save_lotes
 
-st.set_page_config(layout="wide",page_title="AgroMatrix",
-                   page_icon="📈")
+
+image = Image.open("matrix_py/imagenes/file.png")
+
+
+st.set_page_config(layout="wide",
+                   page_title="intEgra",
+                   page_icon=image)
+
 
 def lotes_page():
     st.markdown('<h2 style="font-size: 24px;">Cargar Lotes</h2>', unsafe_allow_html=True)
+
     col1, col2, col3 = st.columns([5, 1, 4])
+
     with col1:
          lotes()
     with col3:
          display_lote_image()
+
 
 
 # Lote y Ambientación Page
@@ -62,7 +74,7 @@ def display_lote_image():
         with st.spinner('Generando el polígono...'):
             time.sleep(3)
             st.toast("Polígono generado!", icon="✅")
-            lotes = gpd.read_file("shapes/lote_plot/lote_2.shp")
+            lotes = gpd.read_file("matrix_py/shapes/lote_plot/lote_2.shp")
             lote = lotes[lotes['Lote'] == '2bc AS']
 
             st.write("")
@@ -97,4 +109,7 @@ def display_lote_image():
         # st.image(image_path, caption="Imagen del Lote cargado")
 
 
-lotes_page()
+
+login.generarLogin()
+if 'usuario' in st.session_state:
+    lotes_page()

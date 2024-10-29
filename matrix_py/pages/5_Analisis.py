@@ -1,11 +1,20 @@
 import time
+from PIL import Image
 
 import streamlit as st
 
 from functions import update_lote_dropdown_options
+import login
 
-st.set_page_config(layout="centered", page_title="AgroMatrix",
-                   page_icon="📈")
+
+
+image = Image.open("matrix_py/imagenes/file.png")
+
+
+st.set_page_config(layout="wide",
+                   page_title="intEgra",
+                   page_icon=image)
+
 
 
 def analisis_page():
@@ -20,4 +29,6 @@ def analisis_page():
     time.sleep(3)
     st.toast("Análisis finalizado con éxito", icon="✅")
 
-analisis_page()
+login.generarLogin()
+if 'usuario' in st.session_state:
+    analisis_page()

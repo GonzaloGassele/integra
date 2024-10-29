@@ -178,12 +178,20 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import streamlit as st
+from PIL import Image
+
+import login
 
 from functions import (load_ambientes, save_ambientes,
                        update_lote_dropdown_options)
 
-st.set_page_config(layout="wide", page_title="AgroMatrix",
-                   page_icon="📈")
+image = Image.open("matrix_py/imagenes/file.png")
+
+
+st.set_page_config(layout="wide",
+                   page_title="intEgra",
+                   page_icon=image)
+
 
 def ambientacion_page():
     col1, col2, col3 = st.columns([5, 1, 4])
@@ -257,7 +265,7 @@ def display_ambientacion_image():
             figsize = (10, 7)
             cmap = 'RdYlGn'
 
-            presc = gpd.read_file("shapes/ambientacion_plot/ambientacion_1.shp")
+            presc = gpd.read_file("matrix_py/shapes/ambientacion_plot/ambientacion_1.shp")
 
             fig, ax = plt.subplots(figsize=figsize)
 
@@ -346,4 +354,6 @@ def save_ambientes(ambientes_df):
     ambientes_df.to_csv("csvs/ambientes.csv", index=False)
     st.session_state['mostrar_lista'] = True
 
-ambientacion_page()
+login.generarLogin()
+if 'usuario' in st.session_state:
+    ambientacion_page()

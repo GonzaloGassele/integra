@@ -3,9 +3,16 @@ import time
 
 import pandas as pd
 import streamlit as st
+import login
+from PIL import Image
 
-st.set_page_config(layout="centered", page_title="AgroMatrix",
-                   page_icon="📈")
+image = Image.open("matrix_py/imagenes/file.png")
+
+
+st.set_page_config(layout="wide",
+                   page_title="intEgra",
+                   page_icon=image)
+
 
 
 def load_ambientes():
@@ -121,4 +128,6 @@ def prescripcion_page():
         else:
             st.button("Descargar", disabled=True, key="disabled_button")
 
-prescripcion_page()
+login.generarLogin()
+if 'usuario' in st.session_state:
+    prescripcion_page()

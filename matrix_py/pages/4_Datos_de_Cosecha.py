@@ -8,11 +8,19 @@ import pandas as pd
 import streamlit as st
 from matplotlib.colorbar import ColorbarBase
 from matplotlib.colors import ListedColormap, Normalize
+from PIL import Image
+
+import login
 
 from functions import update_lote_dropdown_options
 
-st.set_page_config(layout="wide",page_title="AgroMatrix",
-                   page_icon="📈")
+image = Image.open("matrix_py/imagenes/file.png")
+
+
+st.set_page_config(layout="wide",
+                   page_title="intEgra",
+                   page_icon=image)
+
 
 def cosecha_page():
     col1, col2, col3 = st.columns([5, 1, 4])
@@ -49,7 +57,7 @@ def display_cosecha_image():
     if st.session_state.get('cosecha_cargada', False):
         with st.spinner('Generando el mapa...'):
             # time.sleep(3)
-            rinde = gpd.read_file("shapes/cosecha_plot/cosecha_1.shp")
+            rinde = gpd.read_file("matrix_py/shapes/cosecha_plot/cosecha_1.shp")
 
             st.write("")
             st.write("")
@@ -88,6 +96,9 @@ def display_cosecha_image():
             st.toast("Mapa de rendimiento generado!", icon="✅")
         st.session_state['cosecha_cargada'] = False
 
-cosecha_page()
+
+login.generarLogin()
+if 'usuario' in st.session_state:
+    cosecha_page()
 
 # nota: habría que filtrar las prescripciones entre las del lote seleccionado, obviamente. No está hecho

@@ -1,27 +1,37 @@
 import os
 
 import streamlit as st
-from pdf2image import convert_from_path
+from PIL import Image
 
-st.set_page_config(layout="wide", page_title="AgroMatrix", page_icon="📈")
+import login
+
+image = Image.open("matrix_py/imagenes/file.png")
+
+
+st.set_page_config(layout="wide",
+                   page_title="intEgra",
+                   page_icon=image)
+
+#from pdf2image import convert_from_path
+
 
 def visualizacion_page():
     st.markdown('<h2 style="font-size: 24px;">Análisis disponibles para visualizar</h2>', unsafe_allow_html=True)
     input()
-    pdf_folder = "pdfs"
+    pdf_folder = "matrix_py/pdfs"
     if st.session_state.get("selected_pdf", False):
         # selected_pdf = st.session_state.get("selected_pdf")
         # pdf_path = os.path.join(pdf_folder, selected_pdf)
         # images = convert_from_path(pdf_path)  # Convert PDF to images
         # for i, image in enumerate(images):
         #     st.image(image, caption=f"Page {i+1}", use_column_width=True)
-        st.image("imagenes/dashboard.png")
+        st.image("matrix_py/imagenes/dashboard.png")
 
 def input():
     col1, col2 = st.columns(2)
     with col1:
         # Esto es para mostrar el pdf
-        pdf_folder = "pdfs"
+        pdf_folder = "matrix_py/pdfs"
         if not os.path.exists(pdf_folder):
             st.error(f"The folder '{pdf_folder}' does not exist.")
             return
@@ -40,5 +50,6 @@ def input():
         else:
             st.button("Descargar", disabled=True, key="disabled_button")
         
-
-visualizacion_page()
+login.generarLogin()
+if 'usuario' in st.session_state:
+    visualizacion_page()
