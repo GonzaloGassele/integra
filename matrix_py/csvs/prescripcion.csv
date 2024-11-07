@@ -29,8 +29,18 @@ PrTst,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,,Malo
 PrTst,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,,Medio
 PrTst,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,,Bueno
 PrTst,Amb Lara (Campo Lara (LFH)),Soja,,GS2 1800,,Muy Bueno
-PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000,a
-PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000,b
-PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000,c
-PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000,d
-PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000,e
+PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000.0,a
+PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000.0,b
+PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000.0,c
+PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000.0,d
+PrTestFinal,Amb Final 1 (Test Final 1 (TF1)),Trigo,,GS2 2600,10000.0,e
+Pre12,NCAmb (Nueva Castilla (2BC)),Maiz,,GS2 1800,25000.0,Malo Mas
+Pre12,NCAmb (Nueva Castilla (2BC)),Maiz,,GS2 1800,30000.0,Malo
+Pre12,NCAmb (Nueva Castilla (2BC)),Maiz,,GS2 1800,45000.0,Medio
+Pre12,NCAmb (Nueva Castilla (2BC)),Maiz,,GS2 1800,50000.0,Bueno
+Pre12,NCAmb (Nueva Castilla (2BC)),Maiz,,GS2 1800,60000.0,Excelente
+Pre01,NCAmb (Nueva Castilla (2BC)),Maiz,,GS2 1800,25000,Malo Mas
+Pre01,NCAmb (Nueva Castilla (2BC)),Maiz,,GS2 1800,30000,Malo
+Pre01,NCAmb (Nueva Castilla (2BC)),Maiz,,GS2 1800,45000,Medio
+Pre01,NCAmb (Nueva Castilla (2BC)),Maiz,,GS2 1800,50000,Bueno
+Pre01,NCAmb (Nueva Castilla (2BC)),Maiz,,GS2 1800,60000,Excelente

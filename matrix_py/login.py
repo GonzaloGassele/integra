@@ -1,5 +1,6 @@
 import streamlit as st
-import pandas as pd
+import pandas as pd 
+
 
 # Validación simple de usuario y clave con un archivo csv
 
@@ -35,12 +36,14 @@ def generarMenu(usuario):
         #Mostramos el nombre del usuario
         st.write(f"Hola **:blue-background[{nombre}]** ")
         # Mostramos los enlaces de páginas
-        st.page_link("pages/1_Lotes.py", label="Lotes")
-        st.page_link("pages/2_Ambientacion.py", label="Ambientación")
-        st.page_link("pages/3_Prescripcion.py", label="Prescipción")
-        st.page_link("pages/4_Datos_de_Cosecha.py", label="Datos de Cosecha")
-        st.page_link("pages/5_Analisis.py",  label="Análisis de Datos")
-        st.page_link("pages/6_Visualizacion.py",  label="Visualizar")
+        #st.page_link("pages/1_Dashword.py", label="Dashword")
+        st.page_link("pages/2_Lotes.py", label="Lotes")
+        st.page_link("pages/3_Ambientacion.py", label="Ambientación")
+        st.page_link("pages/4_Prescripcion.py", label="Prescipción")
+        st.page_link("pages/5_Datos_de_Cosecha.py", label="Datos de Cosecha")
+        st.page_link("pages/6_Analisis.py",  label="Análisis de Datos")
+        st.page_link("pages/7_Visualizacion.py",  label="Visualizar")
+        st.page_link("pages/8_Panel_financiero.py",  label="Financiero")
         # Botón para cerrar la sesión
         btnSalir=st.button("Salir")
         if btnSalir:

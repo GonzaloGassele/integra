@@ -1,0 +1,11 @@
+Nombre,Prescripción,Ambientación,Ambiente,Tipo,Máquina,Dosis
+Pre12,,Prueba Ambientes (Campo Lara (LFH)),Prueba,Maiz,GS2 1800,
+Pre12,,Prueba Ambientes (Campo Lara (LFH)),Cambiar,Maiz,GS2 1800,
+Pre12,,Prueba Ambientes (Campo Lara (LFH)),Nombres,Maiz,GS2 1800,
+Pre12,,Prueba Ambientes (Campo Lara (LFH)),En,Maiz,GS2 1800,
+Pre12,,Prueba Ambientes (Campo Lara (LFH)),Grafico,Maiz,GS2 1800,
+Pre12,,NCAmb (Nueva Castilla (2BC)),Malo Mas,Maiz,GS2 1800,25000
+Pre12,,NCAmb (Nueva Castilla (2BC)),Malo,Maiz,GS2 1800,30000
+Pre12,,NCAmb (Nueva Castilla (2BC)),Medio,Maiz,GS2 1800,45000
+Pre12,,NCAmb (Nueva Castilla (2BC)),Bueno,Maiz,GS2 1800,50000
+Pre12,,NCAmb (Nueva Castilla (2BC)),Excelente,Maiz,GS2 1800,60000

@@ -16,19 +16,19 @@ st.set_page_config(layout="wide",
 
 
 def load_ambientes():
-    csv_folder = "csvs"
+    csv_folder = "matrix_py/csvs"
     os.makedirs(csv_folder, exist_ok=True)
     csv_path = os.path.join(csv_folder, "ambientes.csv")
     return pd.read_csv(csv_path) if os.path.exists(csv_path) else pd.DataFrame(columns=["Orden de Prioridad", "Nombre del Ambiente", "Nombre"])
 
 def load_prescripciones():
-    csv_folder = "csvs"
+    csv_folder = "matrix_py/csvs"
     os.makedirs(csv_folder, exist_ok=True)
     csv_path = os.path.join(csv_folder, "prescripcion.csv")
     return pd.read_csv(csv_path) if os.path.exists(csv_path) else pd.DataFrame(columns=["Nombre", "Prescripción", "Ambientación", "Ambiente", "Tipo", "Máquina", "Dosis"])
 
 def save_prescripciones(df):
-    csv_folder = "csvs"
+    csv_folder = "matrix_py/csvs"
     csv_path = os.path.join(csv_folder, "prescripcion.csv")
     df.to_csv(csv_path, index=False)
 
@@ -123,7 +123,7 @@ def prescripcion_page():
     with col2:
         if st.session_state.get("habilitar_download", False):
             filename = prescripcion_nombre + "-" + ambientacion
-            with open("archivos/prescripcion.txt") as txt_file:
+            with open("matrix_py/archivos/prescripcion.txt") as txt_file:
                 st.download_button("Descargar", data=txt_file, file_name=filename, key="download_button")
         else:
             st.button("Descargar", disabled=True, key="disabled_button")

@@ -1,5 +1,5 @@
 streamlit
 geopandas
 matplotlib
-
+streamlit-extras
 # otras dependencias
